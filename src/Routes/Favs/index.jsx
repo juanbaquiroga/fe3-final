@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Card from "../Components/Card";
-import { useGlobalContext } from "../Context/Context";
-
+import Card from "../../Components/Card";
+import { useGlobalContext } from "../../Context/Context";
+import styles from "./Favs.module.css"
 
 export const Favs = () => {
     const [favs, setFavs] = useState([])
@@ -16,14 +16,14 @@ export const Favs = () => {
 
     }
     return (
-        <>
-        <h1>Dentists Favs</h1>
-        <div className="card-grid">
+        <div className={`${styles.container} ${state.theme === "light"? styles.light : styles.dark}`}>
+        <h1 className={styles.title}>Dentists Favs</h1>
+        <div className={styles.cardContainer}>
             {favs && favs.map((dentist)=>{
                     return <Card key={dentist.key} dentist={dentist} isFav={true}/>
                 })}
         </div>
-        <button onClick={deleteAll}>Delete all</button>
-        </>
+        <button className={styles.button} onClick={deleteAll}>Delete all</button>
+        </div>
     );
 };

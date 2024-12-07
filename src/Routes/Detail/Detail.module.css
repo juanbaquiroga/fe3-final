@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    .card{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 15px;
+        .img{
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        .textContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            .title{
+                font-size: 2em;
+            }
+            .name{
+                font-size: 1.4em;
+            }
+            .text{
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+
+
+
+.light{
+    background-color: var(--background-color-light);
+    .card{
+        background-color: var(--card-color-light);
+        .textContainer{
+            .title, .name, .text{
+                color: var(--text-color-light);
+            }
+        }
+    }
+}
+
+.dark{
+    background-color: var(--background-color-dark);
+    .card{
+        background-color: var(--card-color-dark);
+        .textContainer{
+            .title, .name, .text{
+                color: var(--text-color-dark);
+            }
+        }
+    }
+}

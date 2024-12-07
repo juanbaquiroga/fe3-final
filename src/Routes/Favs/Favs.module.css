@@ -1,0 +1,47 @@
+@import "../../styles/variables.css";
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem 0;
+    .title{
+        font-size: 2.5rem;
+    }
+    .cardContainer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 1rem;
+        max-width: 90%;
+    }
+    .button{
+        height: 2rem;
+        border: none;
+        border-radius: .5rem;
+        padding: 0 1rem;
+    }
+}
+
+.light{
+    background-color: var(--background-color-light);
+    .title{
+        color: var(--text-color-light);
+    }
+    .button{
+        color: var(--text-color-dark);
+        background-color: var(--button-color-light);
+    }
+}
+
+.dark{
+    background-color: var(--background-color-dark);
+    .title{
+        color: var(--text-color-dark);
+    }
+    .button{
+        color: var(--text-color-light);
+        background-color: var(--button-color-dark);
+    }
+}

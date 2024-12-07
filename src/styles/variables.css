@@ -1,0 +1,16 @@
+:root{
+    --text-color-light: rgb(40,40,40);
+    --background-color-light: rgb(220,220,220);
+    --card-color-light: rgb(160,160,160);
+    --button-color-light: rgb(40,40,40);
+    --footer-color-light: rgb(200,200,200);
+    --nav-background-light: rgb(200,200,200);
+    
+    --text-color-dark: rgb(220,220,220);
+    --background-color-dark: rgb(40,40,40);
+    --card-color-dark: rgb(80,80,80);
+    --button-color-dark: rgb(160,160,160);
+    --footer-color-dark: rgb(30,30,30);
+    --nav-background-dark: rgb(30,30,30)
+}
+

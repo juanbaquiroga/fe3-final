@@ -1,0 +1,45 @@
+@import "../../styles/variables.css";
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    .label{
+        font-size: 1.1rem;
+        padding-left: .5rem;
+    }
+    .input{
+        height: 1.5rem;
+        margin-bottom: 1rem;
+        padding-left: .5rem;
+        border: none;
+        border-radius: .75rem;
+    }
+    .button{
+        height: 2rem;
+        border: none;
+        border-radius: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+.light{
+    .label{
+        color: var(--text-color-light);
+    }
+    .button{
+        color: var(--text-color-dark);
+        background-color: var(--button-color-light);
+    }
+}
+
+.dark{
+    .label{
+        color: var(--text-color-dark)
+    }
+    .button{
+        color: var(--text-color-light);
+        background-color: var(--button-color-dark);
+    }
+}

@@ -1,0 +1,35 @@
+@import "../../styles/variables.css";
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    
+    .text{
+        font-size: 1.2rem;
+    }
+    .img{
+        height: 50%;
+        width: auto;
+    }
+}
+
+.light{
+    background-color: var(--footer-color-light);
+    .text{
+        color: var(--text-color-light);
+    }
+}
+
+.dark{
+    background-color: var(--footer-color-dark);
+    .text{
+        color: var(--text-color-dark);
+    }
+    .img{
+        filter: invert(100%);
+    }
+}
+
